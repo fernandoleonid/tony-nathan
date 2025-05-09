@@ -103,7 +103,7 @@ section {
     color: var(--primary-color);
 }
 
-.container-pizzas {
+.container-produtos {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -177,7 +177,65 @@ section {
 }
 
 .cardapio {
-    background-color: plum;
+    background-color: white;
+}
+.cardapio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 2px solid var(--primary-color);
+    height: 250px;
+}
+.cardapio-item:last-child{
+    border: none;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.section-title h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.item-text {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+}
+
+.item-text h4,
+.item-text a{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.bebida {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.bebida:hover {
+    box-shadow: 0 0 16px #bbb;
+}
+.bebida p {
+    width: 100%;
+}
+
+.bebida .preco {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.bebida .descricao {
+    font-size: 0.8rem;
 }
 
 .servicos {
